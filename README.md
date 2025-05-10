@@ -33,9 +33,29 @@ Try it out now: [View the App](https://sanyam-agarwal-20.github.io/WebDesignProj
 
 ## 📸 Screenshots
 
-| Light Mode | Dark Mode |
-|------------|-----------|
+**#Add Tasks**
 
+**-Dark Theme**
+
+![Dark Mode](assets/d1.PNG) 
+
+**-Light Theme**
+
+![Light Mode](assets/l1.PNG)
+
+**Timer**
+
+![timer](assets/timer.PNG)
+
+**Tasks for Today
+
+![todaystask](assets/todays%20task.PNG)
+
+![todaystasklight](assets/l2.png)
+
+Weather
+
+![weather](assets/weather.PNG)
 
 ## ⚙️ Technologies Used
 
