@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker - It</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="weather-box">
+        <input type="text" id="city" placeholder="Enter city" style="width: 80px; font-size: 16px;">
+        <button onclick="getWeather()" id="weather-common">Get</button>
+        <p id="weather-result"></p>
+    </div>
+
+    <div id="today-date-display"></div>
+
+    <div id="theme-container">
+        <svg id="toggle-theme" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 1 0 9.79 9.79z"/>
+        </svg>
+    </div>
+
+    <div id="site-title"></div>
+    <p>Your personal weekly habit tracker</p>
+    <div id="container">
+
+        <div id="container-menu">
+            <div id="username-area">
+                <div id="new-user-area">
+                    <input type="text" id="username-input" placeholder="Enter your name" />
+                    <button id="set-username">Enter</button>
+                </div>
+                <div id="preloadtext">Welcome&nbsp;<div id="registered-user-area"></div></div>
+            </div>
+
+            <div id="habit-form">
+                <input type="text" id="habit-input" placeholder="Enter a new habit" />
+                <input type="time" id="habit-time" />   
+                <button id="add-habit">Add Habit</button>
+            </div>
+            <div id="habit-days">
+                <label><input type="checkbox" id="M" /> M</label>
+                <label><input type="checkbox" id="T" /> T</label>
+                <label><input type="checkbox" id="W" /> W</label>
+                <label><input type="checkbox" id="Th" /> T</label>
+                <label><input type="checkbox" id="F" /> F</label>
+                <label><input type="checkbox" id="S" /> S</label>
+                <label><input type="checkbox" id="Su" /> S</label>
+            </div> 
+            <hr>
+            <div id="habit-list"></div>
+
+            <div id="habit-grids"></div>
+        </div>
+
+        <div id="time-menu-container">
+            <div id="time-content">
+                <div class="ts-toggle-buttons commontimedit">
+                    <button class="active" id="timerBtn">Timer</button>
+                    <button id="stopwatchBtn">Stopwatch</button>
+                </div>
+                <div class="input-group commontimedit" id="timeInputs">
+                    <input type="number" id="hours" placeholder="HH" min="0" max="23">
+                    <input type="number" id="minutes" placeholder="MM" min="0" max="59">
+                    <input type="number" id="seconds" placeholder="SS" min="0" max="59">
+                </div>
+                <div class="controls commontimedit">
+                    <button id="start">Start</button>
+                    <button id="pause">Pause</button>
+                    <button id="stop">Stop</button>
+                </div>
+                <div class="circle-wrapper commontimedit">
+                    <svg class="circle-svg" width="200" height="200">
+                        <circle class="circle-bg" r="90" cx="100" cy="100"/>
+                        <circle class="circle-progress" id="progressCircle" r="90" cx="100" cy="100"/>
+                    </svg>
+                    <div class="timer-display commontimedit" id="display">00:00:00</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="today-habit-list-container" class="hide-today">
+        <h2><u>Todays Tasks</u></h2><br>
+        <div id="today-task-list"></div>
+    </div>
+
+    <footer>
+        <h3 id="submitted-by">by Sanyam Agarwal</h3>
+    </footer>
+
+    <div id="timer-container">
+        <svg id="timer" width="48" height="48" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="36" r="24" stroke="var(--backgroundcolor)" stroke-width="4" fill="none"/>
+            <line x1="32" y1="36" x2="32" y2="20" stroke="var(--backgroundcolor)" stroke-width="4" stroke-linecap="round"/>
+            <line x1="24" y1="8" x2="40" y2="8" stroke="var(--backgroundcolor)" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="32" cy="8" r="4" fill="var(--backgroundcolor)"/>
+        </svg>
+    </div>    
+
+    <script src="script.js"></script>
+</body>
+</html>
