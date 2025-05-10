@@ -491,3 +491,15 @@ li:hover{
     border: solid 2px var(--backgroundcolor);
     color: var(--backgroundcolor);
 }
+
+
+@media(max-width: 700px){
+    .weather-box{
+        display: none;
+    }
+
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+}
