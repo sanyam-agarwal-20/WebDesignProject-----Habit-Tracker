@@ -47,13 +47,13 @@ Try it out now: [View the App](https://sanyam-agarwal-20.github.io/WebDesignProj
 
 ![timer](assets/timer.PNG)
 
-**Tasks for Today
+**Tasks for Today**
 
 ![todaystask](assets/todays%20task.PNG)
 
 ![todaystasklight](assets/l2.png)
 
-Weather
+**Weather**
 
 ![weather](assets/weather.PNG)
 
